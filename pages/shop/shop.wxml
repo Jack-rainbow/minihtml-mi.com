@@ -1,0 +1,15 @@
+<view class='container'>
+  <view class='cont'>
+    <view class='cont-h'>
+        <view class='cont-i'>
+            <image src='../../images/shop-c.png'  class='cont-ii'></image>
+        </view>
+        <view class='gwc'>购物车还是空的</view>
+    </view>
+   </view>
+  <view class='cont-sp'>     
+          <navigator url='../index/index' class='shop-w'>
+          到小米商城逛逛
+          </navigator>
+  </view>
+</view>

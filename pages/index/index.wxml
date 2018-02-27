@@ -1,0 +1,111 @@
+<!--index.wxml-->
+<view class='body_bg'>
+  <view class="container">
+  <!--轮播  -->
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for-items="{{banner_list[0].banner}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item.pic_url}}" class="slide-image" />
+      </swiper-item>
+    </block>
+    
+  </swiper>
+   </view>
+   
+  <!--nav  -->
+  <view class='nav_li'>
+    <view wx:for="{{nav}}" wx:key="{{index}}" class='nav_l'>  
+    <navigator class='nav_a' url='../logs/logs'>
+      <image src='{{item.url}}'class="nav_I"></image>
+    </navigator> 
+      
+    </view>
+  </view>
+  
+  <!--more  -->
+   <view class='more'>
+    <view class='floortitle'>
+      <view class='floortitlemoreicon'>热卖商品</view>
+      <view class='floortitlemoretext'>更多> </view>
+    </view>
+
+    <view class='hotgoodcontainer'>
+      <view class='gooditem' wx:for="{{hotgoods}}" wx:key="{{index}}">
+      <view class='imgview'>
+        <image class='productimg' src='{{item.pic_url}}'></image>
+        <view class='font-wz'>{{item.name}}</view>
+      </view> 
+      </view>
+    </view>
+    </view>
+ 
+
+  <!--tabbar  -->
+  <!--more  -->
+   <view class='more'>
+    <view class='floortitle'>
+      <view class='floortitlemoreicon'>明星单品</view>
+      <view class='floortitlemoretext'>更多> </view>
+    </view>
+
+    <view class='hotgoodcontainer'>
+      <view class='gooditem' wx:for="{{hotgoods}}" wx:key="{{index}}">
+      <view class='imgview'>
+        <image class='productimg' src='{{item.pic_url}}'></image>
+        <view class='font-wz'> {{item.name}}</view>
+      </view> 
+      </view>
+    </view>
+    </view>
+    <!--more  -->
+   <view class='more'>
+    <view class='floortitle'>
+      <view class='floortitlemoreicon'>新品上线</view>
+      <view class='floortitlemoretext'>更多> </view>
+    </view>
+
+    <view class='hotgoodcontainer'>
+      <view class='gooditem' wx:for="{{hotgoods}}" wx:key="{{index}}">
+      <view class='imgview'>
+        <image class='productimg' src='{{item.pic_url}}'></image>
+        <view class='font-wz'>{{item.name}}</view>
+      </view> 
+      </view>
+    </view>
+    </view>
+
+    <!--more  -->
+   <view class='more'>
+    <view class='floortitle'>
+      <view class='floortitlemoreicon'>热卖商品</view>
+      <view class='floortitlemoretext'>更多> </view>
+    </view>
+
+    <view class='hotgoodcontainer'>
+      <view class='gooditem' wx:for="{{hotgoods}}" wx:key="{{index}}">
+      <view class='imgview'>
+        <image class='productimg' src='{{item.pic_url}}'></image>
+        <view class='font-wz'>{{item.name}}</view>
+      </view> 
+      </view>
+    </view>
+    </view>
+
+    <!--more  -->
+   <view class='more'>
+    <view class='floortitle'>
+      <view class='floortitlemoreicon'>热卖商品</view>
+      <view class='floortitlemoretext'>更多> </view>
+    </view>
+
+    <view class='hotgoodcontainer'>
+      <view class='gooditem' wx:for="{{hotgoods}}" wx:key="{{index}}">
+      <view class='imgview'>
+        <image class='productimg' src='{{item.pic_url}}'></image>
+        <view class='font-wz'>{{item.name}}</view>
+      </view> 
+      </view>
+    </view>
+    </view>
+</view>

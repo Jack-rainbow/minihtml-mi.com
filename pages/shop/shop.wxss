@@ -1,0 +1,44 @@
+.container{
+  background-color: rgb(245, 245, 245);
+  height: 3000px;
+}
+.cont{
+  padding-top:50px;
+  text-align:center;
+  margin:0px;
+  padding-bottom:30px;
+
+}
+.cont-i{
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 auto;
+  
+} 
+.cont-ii{
+  width: 50px;
+  height: 50px;
+  margin-top: 20%;
+}
+.cont-sp{
+  margin-top: 30px;
+  width: 80%;
+  height: 50px;
+  background-color: rgb(237, 91, 0);
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  line-height: 50px; 
+  margin: 0 auto; 
+
+}
+.gwc{
+  margin-top: 50px;
+  text-align: center;
+  font-size: 18px;
+}
+.shop-w{
+  font-size: 20px;
+}

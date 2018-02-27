@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="nav_left">
+    <block wx:for="{{navLeftItems}}" wx:key="{{index}}">
+      <view class="nav_left_items {{curNav == item.id ? 'active' : ''}}"  wx:index="{{index}}" >{{item.tree.desc}}</view>
+    </block>
+  </view>
+  <!--right  -->
+  <view class="nav_right">
+      <block wx:for="{{navRightItems}}" wx:key="{{index}}">
+        <view class="nav_right_items">
+            <image src="{{item.tree.nodes[0].tree.logo}}"></image>
+            <text>{{item.tree.nodes[0].tree.nodes[1].tree.desc}}</text>
+        </view> 
+      </block>
+  </view> 
+</view>
